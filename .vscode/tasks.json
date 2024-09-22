@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build gltest",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "gltest.cpp",
+                "-o",
+                "gltest.out",
+                "-lGL",
+                "-lGLU",
+                "-lglut"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

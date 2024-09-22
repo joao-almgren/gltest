@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug gltest",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/gltest.out", // Path to your compiled program
+            "args": [],
+            "cwd": "${workspaceFolder}", // Current working directory
+            "environment": [],
+            "externalConsole": true, // Optional: opens an external console
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb", // Path to gdb
+            "preLaunchTask": "build gltest" // Run the build task before launching
+        }
+    ]
+}
